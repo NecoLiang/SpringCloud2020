@@ -1,4 +1,4 @@
-package com.neco.springcloud.controller;
+package com.neco.springcloud;
 
 import com.neco.springcloud.entities.CommonResult;
 import com.neco.springcloud.entities.Payment;

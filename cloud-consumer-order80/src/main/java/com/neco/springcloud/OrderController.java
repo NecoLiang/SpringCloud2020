@@ -1,4 +1,4 @@
-package com.neco.springcloud.controller;
+package com.neco.springcloud;
 
 import com.neco.springcloud.entities.CommonResult;
 import com.neco.springcloud.entities.Payment;
@@ -18,7 +18,7 @@ import javax.annotation.Resource;
 @Slf4j
 public class OrderController {
 
-    public static final String PAYMENT_URL = "http://CLOUD-PAYMENT-SERVICE";
+    public static final String PAYMENT_URL = "http://cloud-provider-payment";
 
     @Resource
     private RestTemplate restTemplate;
@@ -34,4 +34,5 @@ public class OrderController {
         return restTemplate.getForObject(PAYMENT_URL+"/payment/get/"+id,CommonResult.class);
 
     }
+
 }
