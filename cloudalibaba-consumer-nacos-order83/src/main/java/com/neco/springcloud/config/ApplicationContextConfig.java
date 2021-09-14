@@ -7,12 +7,12 @@ import org.springframework.web.client.RestTemplate;
 
 /**
  * @author liangyt
- * @create 2021-08-04 21:10
+ * @create 2021-09-14 15:01
  */
 @Configuration
 public class ApplicationContextConfig {
     @Bean
-//    @LoadBalanced//增加负载均衡能力
+    @LoadBalanced
     public RestTemplate restTemplate(){
         return new RestTemplate();
     }
